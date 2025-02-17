@@ -1,4 +1,7 @@
 import '../styles/explore.css';
+import { Link } from "react-router-dom";
+
+
 
 const posts = [
     {
@@ -74,6 +77,25 @@ const posts = [
 const Explore = () => {
   return (
     <div className="explore">
+        <nav className="profile-nav">
+        <Link to="/home" className="back-link">
+          <svg
+            className="back-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          Back to Home
+        </Link>
+      </nav>
+
       <div className="explore__container">
         <header className="explore__header">
           <h1 className="explore__title">Explore Trending Stories</h1>
