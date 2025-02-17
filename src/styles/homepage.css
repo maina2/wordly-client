@@ -1,0 +1,444 @@
+/* HomePage.css */
+
+/* Base Styles */
+.homepage {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0056b3;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #0056b3;
+  }
+  
+  .login-btn {
+    background-color: #ff7f50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #ff6b3b;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #0f3460 0%, #0056b3 100%);
+    color: white;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-btn {
+    background-color: #ff7f50;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #ff6b3b;
+  }
+  
+  /* Main Content */
+  .main-content {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .trending-topics {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .trending-topics li {
+    margin-bottom: 0.8rem;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .trending-topics li:hover {
+    color: #0056b3;
+  }
+  
+  /* Feed */
+  .feed {
+    flex: 1;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feed h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .post {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .post h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .post p {
+    color: #666;
+  }
+  
+  .author {
+    color: #0056b3;
+    font-weight: 500;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    margin-top: auto;
+  }
+  
+  .footer p {
+    margin: 0;
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .main-content {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .sidebar {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      padding: 4rem 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .cta-btn {
+      padding: 0.6rem 1.5rem;
+    }
+  }
+  /* Add these styles to your existing HomePage.css */
+
+/* Post Form Styles */
+.post-form, .edit-form {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.post-form input,
+.post-form textarea,
+.edit-form input,
+.edit-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.post-form input:focus,
+.post-form textarea:focus,
+.edit-form input:focus,
+.edit-form textarea:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+}
+
+.post-form textarea,
+.edit-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.post-form button[type="submit"],
+.edit-form button[type="submit"] {
+  background-color: #ff7f50;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.post-form button[type="submit"]:hover,
+.edit-form button[type="submit"]:hover {
+  background-color: #ff6b3b;
+}
+
+/* Edit Form Specific Styles */
+.edit-form {
+  background: #f8faff;
+  border: 2px solid #0056b3;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.edit-form button[type="button"] {
+  background-color: #6c757d;
+  margin-left: 0.5rem;
+}
+
+/* Post Styles */
+.post {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.post:hover {
+  transform: translateY(-2px);
+}
+
+.post h3 {
+  color: #2d3436;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.post p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Post Actions */
+.post-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.post-actions button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.post-actions button:first-child {
+  background-color: #e9ecef;
+  color: #2d3436;
+}
+
+.post-actions button:first-child:hover {
+  background-color: #dee2e6;
+}
+
+.post-actions button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.post-actions button:last-child:hover {
+  background-color: #bb2d3b;
+}
+
+/* Empty State */
+.feed > p {
+  text-align: center;
+  color: #666;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+}
+/* Modify in HomePage.css */
+.post-form, .edit-form {
+  /* ... existing styles ... */
+  width: 100%;
+  box-sizing: border-box; /* Add this to include padding in width calculation */
+}
+
+.post-form input,
+.post-form textarea,
+.edit-form input,
+.edit-form textarea {
+  /* ... existing styles ... */
+  box-sizing: border-box; /* Add this to include padding and border in width calculation */
+  max-width: 100%; /* Ensure content doesn't overflow */
+}
+/* Modify in HomePage.css */
+.sidebar {
+  width: 250px;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: fit-content; /* Add this to make it fit content */
+  position: sticky; /* Add this to make it stick */
+  top: 2rem; /* Add this to give some space from top */
+}
+
+/* Modify the main-content to align items at start */
+.main-content {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex: 1;
+  align-items: flex-start; /* Add this to align items at the top */
+}
+.post-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.form-actions button {
+  flex: 1;
+}
+/* Responsive Design Additions */
+@media (max-width: 768px) {
+  .post-form,
+  .edit-form {
+    padding: 1rem;
+  }
+
+  .post-actions {
+    flex-direction: column;
+  }
+
+  .post-actions button {
+    width: 100%;
+    padding: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .post h3 {
+    font-size: 1.1rem;
+  }
+
+  .post p {
+    font-size: 0.9rem;
+  }
+}

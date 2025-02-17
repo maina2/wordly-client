@@ -1,0 +1,224 @@
+/* landingpage.css */
+.landing-page {
+    font-family: 'Poppins', 'Arial', sans-serif;
+    color: #2d3436;
+    line-height: 1.6;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 90vh;
+    padding: 4rem 8%;
+    background: linear-gradient(135deg, #0056b3 0%, #0f3460 100%);
+    color: white;
+  }
+  
+  .hero-content {
+    flex: 1 1 45%;
+    min-width: 300px;
+    padding-right: 4rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+  }
+  
+  .cta-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .cta-btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(255, 127, 80, 0.3);
+  }
+  
+  .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 127, 80, 0.4);
+    background-color: #ff6b3b;
+  }
+  
+  .secondary-btn {
+    padding: 1rem 2.5rem;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .secondary-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .hero-image-container {
+    flex: 1 1 45%;
+    min-width: 300px;
+  }
+  
+  .hero-image {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 6rem 8%;
+    background: #f8f9fa;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #ff7f50;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+  }
+  
+  .feature-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2d3436;
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    padding: 6rem 8%;
+    background: #ffffff;
+  }
+  
+  .testimonial-card {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem;
+    position: relative;
+  }
+  
+  .quote-icon {
+    font-size: 4rem;
+    color: #ff7f50;
+    opacity: 0.3;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+  }
+  
+  blockquote {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    color: #555;
+  }
+  
+  .author {
+    font-weight: 600;
+    color: #2d3436;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    background: #0f3460;
+    color: white;
+    padding: 6rem 8%;
+    text-align: center;
+  }
+  
+  .cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 4rem 5%;
+      text-align: center;
+    }
+    
+    .hero-content {
+      padding-right: 0;
+      margin-bottom: 3rem;
+    }
+    
+    .cta-container {
+      justify-content: center;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .feature-card {
+      padding: 2rem 1.5rem;
+    }
+  }
