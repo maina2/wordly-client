@@ -1,4 +1,4 @@
-import './explore.css';
+import '../styles/explore.css';
 
 const posts = [
     {
